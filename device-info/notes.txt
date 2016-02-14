@@ -1,0 +1,1 @@
+Seems to have SELinux, although it's not listed in the device settings.

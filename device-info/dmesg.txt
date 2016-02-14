@@ -1,0 +1,794 @@
+<6>[    0.000000] Initializing cgroup subsys cpu
+<5>[    0.000000] Linux version 3.0.36+ (hss@ubuntu01) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #50 SMP PREEMPT Wed Sep 24 14:07:11 CST 2014
+<4>[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<4>[    0.000000] Machine: RK30board
+<4>[    0.000000] ddr size = 2048 M, set ion_reserve_size size to 125829120
+<6>[    0.000000] memory reserve: Memory(base:0x98800000 size:120M) reserved for <ion>
+<6>[    0.000000] memory reserve: Memory(base:0x97000000 size:24M) reserved for <fb0 buf>
+<6>[    0.000000] memory reserve: Total reserved 144M
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<6>[    0.000000] bootconsole [earlycon0] enabled
+<4>[    0.000000] CPU SRAM: copied sram code from c0e83000 to fef00100 - fef02040
+<4>[    0.000000] CPU SRAM: copied sram data from c0e84f40 to fef02040 - fef02970
+<4>[    0.000000] sram_log:   @      0q   @       P    1      /  !    aB@ 2   `" 2q    : 4q 
+<4>[    0.000000] CLKDATA_MSG: pll_flag = 0x03
+<3>[    0.000000] cpll auto set rate error
+<6>[    0.000000] L310 cache controller enabled
+<6>[    0.000000] l2x0: 16 ways, CACHE_ID 0x4100c0c8, AUX_CTRL 0x76050001, Cache size: 524288 B
+<4>[    0.000000] DDR DEBUG: version 1.00 20131106 
+<4>[    0.000000] DDR DEBUG: DDR3 Device
+<4>[    0.000000] DDR DEBUG: Bus Width=32 Col=10 Bank=8 Row=15 CS=2 Total Capability=2048MB
+<4>[    0.000000] DDR DEBUG: init success!!! freq=300MHz
+<4>[    0.000000] DDR DEBUG: DTONE=0x3, DTERR=0x0, DTIERR=0x0, DTPASS=0x24, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: DTONE=0x3, DTERR=0x0, DTIERR=0x0, DTPASS=0x23, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: DTONE=0x3, DTERR=0x0, DTIERR=0x0, DTPASS=0x1b, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: DTONE=0x3, DTERR=0x0, DTIERR=0x0, DTPASS=0x23, DGSL=1 extra clock, DGPS=90
+<4>[    0.000000] DDR DEBUG: ZERR=0, ZDONE=0, ZPD=0x0, ZPU=0x0, OPD=0x0, OPU=0x0
+<4>[    0.000000] DDR DEBUG: DRV Pull-Up=0xb, DRV Pull-Dwn=0xb
+<4>[    0.000000] DDR DEBUG: ODT Pull-Up=0x2, ODT Pull-Dwn=0x2
+<4>[    0.000000] Boot mode: REBOOT (6) flag: NORMAL (0xc3524200)
+<7>[    0.000000] On node 0 totalpages: 487424
+<7>[    0.000000] free_area_init_node: node 0, pgdat c0e80600, node_mem_map c2150000
+<7>[    0.000000]   Normal zone: 976 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 123952 pages, LIFO batch:31
+<7>[    0.000000]   HighMem zone: 3120 pages used for memmap
+<7>[    0.000000]   HighMem zone: 359376 pages, LIFO batch:31
+<6>[    0.000000] PERCPU: Embedded 7 pages/cpu @c315d000 s7040 r8192 d13440 u32768
+<7>[    0.000000] pcpu-alloc: s7040 r8192 d13440 u32768 alloc=8*4096
+<7>[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 483328
+<5>[    0.000000] Kernel command line: console=ttyFIQ0 androidboot.console=ttyFIQ0 init=/init initrd=0x62000000,0x00150000 mtdparts=rk29xxnand:0x00002000@0x00002000(misc),0x00006000@0x00004000(kernel),0x00006000@0x0000a000(boot),0x00010000@0x00010000(recovery),0x00180000@0x00020000(backup),0x00040000@0x001a0000(cache),0x003FE000@0x001e0000(userdata),0x00002000@0x005dE000(metadata),0x00002000@0x005e0000(kpanic),0x00180000@0x005e2000(system),-@0x00762000(user) bootver=2014-03-03#2.13 firmware_ver=4.4.2
+<6>[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000] allocated 8388608 bytes of page_cgroup
+<6>[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+<6>[    0.000000] Memory: 880MB 1024MB = 1904MB total
+<5>[    0.000000] Memory: 1901464k/1901464k available, 195688k reserved, 1449984K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xff600000 - 0xffe00000   (   8 MB)
+<5>[    0.000000]     vmalloc : 0xdf000000 - 0xfe800000   ( 504 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xde800000   ( 488 MB)
+<5>[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000]       .init : 0xc0408000 - 0xc062f000   (2204 kB)
+<5>[    0.000000]       .text : 0xc062f000 - 0xc0df5230   (7961 kB)
+<5>[    0.000000]       .data : 0xc0df6000 - 0xc0e82428   ( 562 kB)
+<5>[    0.000000]        .bss : 0xc0e86024 - 0xc19385c8   (10954 kB)
+<6>[    0.000000] SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+<6>[    0.000000] Preemptible hierarchical RCU implementation.
+<6>[    0.000000] NR_IRQS:352
+<4>[    0.000000] rk30_gpio_init: 128 gpio irqs in 4 banks
+<6>[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+<4>[    0.000000] rk_timer: version 1.3
+<6>[    0.003713] Calibrating delay loop (skipped) preset value.. 1583.48 BogoMIPS (lpj=7917420)
+<6>[    0.012796] pid_max: default: 32768 minimum: 301
+<6>[    0.018023] Security Framework initialized
+<6>[    0.022570] SELinux:  Initializing.
+<7>[    0.026475] SELinux:  Starting in permissive mode
+<6>[    0.026544] Mount-cache hash table entries: 512
+<6>[    0.032088] Initializing cgroup subsys debug
+<6>[    0.036825] Initializing cgroup subsys cpuacct
+<6>[    0.041764] Initializing cgroup subsys memory
+<6>[    0.046611] Initializing cgroup subsys freezer
+<6>[    0.051550] CPU: Testing write buffer coherency: ok
+<4>[    0.137700] CPU1: Booted secondary processor
+<4>[    0.177696] CPU2: Booted secondary processor
+<4>[    0.217690] CPU3: Booted secondary processor
+<6>[    0.217729] Brought up 4 CPUs
+<6>[    0.235245] SMP: Total of 4 processors activated (6333.93 BogoMIPS).
+<6>[    0.242616] devtmpfs: initialized
+<7>[    0.251654] delayline: aclk_cpu 297000000 div 2 clk 99000000 start point 74
+<6>[    0.252425] NET: Registered protocol family 16
+<6>[    0.257464] last_log: 0xde100000 map to 0xdf004000 and copy to 0xc0e8a1a0 (version 2.1)
+<4>[    0.281449] DVFS MSG:	AVS Value(index=0): 145 145 145 145 145 145 145 145 145 145 
+<6>[    0.300412] warning:lcdc0 not add to system!
+<6>[    0.305208] lcdc1 is used as primary display device controller!
+<6>[    0.411987] rk29sdk_wifi_bt_gpio_control_init: init finished
+<6>[    0.419622] console [ttyFIQ0] enabled, bootconsole disabled
+<6>[    0.428779] Registered FIQ tty driver de035cc0
+<6>[    0.429324] Loaded driver for PL330 DMAC-1 rk29-pl330
+<6>[    0.429367] 	DBUFF-32x8bytes Num_Chans-6 Num_Peri-12 Num_Events-12
+<6>[    0.429550] Loaded driver for PL330 DMAC-2 rk29-pl330
+<6>[    0.429591] 	DBUFF-64x8bytes Num_Chans-7 Num_Peri-20 Num_Events-14
+<6>[    0.461471] bio: create slab <bio-0> at 0
+<5>[    0.465903] SCSI subsystem initialized
+<6>[    0.466111] usbcore: registered new interface driver usbfs
+<6>[    0.466224] usbcore: registered new interface driver hub
+<6>[    0.480477] usbcore: registered new device driver usb
+<6>[    0.480719] rk30_i2c rk30_i2c.0: i2c-0: RK30 I2C adapter
+<6>[    0.480966] rk30_i2c rk30_i2c.1: i2c-1: RK30 I2C adapter
+<6>[    0.481152] rk30_i2c rk30_i2c.2: i2c-2: RK30 I2C adapter
+<6>[    0.481283] rk30_i2c rk30_i2c.3: i2c-3: RK30 I2C adapter
+<6>[    0.481433] rk30_i2c rk30_i2c.4: i2c-4: RK30 I2C adapter
+<6>[    0.512064] rk30-adc rk30-adc: rk30 adc: driver initialized
+<6>[    0.512169] RK29 Watchdog Timer, (c) 2011 Rockchip Electronics
+<6>[    0.512379] rk29-wdt rk29-wdt.0: starting watchdog timer
+<6>[    0.512633] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.513068] Bluetooth: Core ver 2.16
+<6>[    0.513139] NET: Registered protocol family 31
+<6>[    0.513176] Bluetooth: HCI device and connection manager initialized
+<6>[    0.513226] Bluetooth: HCI socket layer initialized
+<6>[    0.513266] Bluetooth: L2CAP socket layer initialized
+<6>[    0.513326] Bluetooth: SCO socket layer initialized
+<4>[    0.514393] rk fb probe ok!
+<3>[    0.514731] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 2...
+<3>[    0.515022] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 1...
+<3>[    0.515311] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 0...
+<4>[    0.515377] read Reg(0x17):0xff 
+<4>[    0.515403] bTrs65920 = 0
+<3>[    0.515651] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 2...
+<3>[    0.515940] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 1...
+<3>[    0.516227] i2c i2c-1: No ack, Maybe slave(addr: 0x5a) not exist or abnormal power-on, retry 0...
+<4>[    0.516292] The device is not act8846 
+<4>[    0.516494] i2c-core: driver [act8846] using legacy suspend method
+<4>[    0.516541] i2c-core: driver [act8846] using legacy resume method
+<6>[    0.516610] Switching to clocksource rk_timer
+<6>[    0.517134] Switched to NOHz mode on CPU #0
+<6>[    0.517727] Switched to NOHz mode on CPU #3
+<6>[    0.517741] Switched to NOHz mode on CPU #1
+<6>[    0.517753] Switched to NOHz mode on CPU #2
+<4>[    0.525400] lcdc1:reg_phy_base = 0x1010e000,reg_vir_base:0xdf0ac000
+<4>[    0.525490] fb0:win0
+<4>[    0.525496] fb1:win1
+<4>[    0.525500] fb2:win2
+<4>[    0.525592] rk3188 lcdc1 clk enable...
+<4>[    0.550720] rk3188 lcdc1 clk disable...
+<4>[    0.610429] fb0:phy:97000000>>vir:e0000000>>len:0x1800000
+<4>[    0.610715] rk_fb_register>>>>>fb0
+<4>[    0.611032] rk_fb_register>>>>>fb1
+<4>[    0.643507] rk3188 lcdc1 probe ok!
+<6>[    0.698499] cfg80211: Calling CRDA to update world regulatory domain
+<6>[    0.705352] IT66121 probe success.pwm_regulator_probe:n_voltages=24
+<6>[    0.705650] pwm_regulator.0: driver initialized
+<4>[    0.715729] pwm_regulator_probe:n_voltages=24
+<6>[    0.715875] pwm_regulator.1: driver initialized
+<3>[    0.727006] emmc emmc: internal_storage is NOT emmc
+<6>[    0.727207] NET: Registered protocol family 2
+<6>[    0.727357] IP route cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.727696] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+<6>[    0.728716] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+<6>[    0.729843] TCP: Hash tables configured (established 65536 bind 65536)
+<6>[    0.729891] TCP reno registered
+<6>[    0.729922] UDP hash table entries: 256 (order: 1, 8192 bytes)
+<6>[    0.729981] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+<6>[    0.730298] NET: Registered protocol family 1
+<6>[    0.730503] Unpacking initramfs...
+<6>[    0.800716] Freeing initrd memory: 1344K
+<6>[    0.800824] PMU: registered new PMU device of type 0
+<4>[    0.800944] efuse_version_val: efuse version = 51
+<4>[    0.800985] DVFS MSG: core: dvfs_adjust_table_lmtvolt get leakage_level = 7000
+<4>[    0.801038] efuse_version_val: efuse version = 51
+<4>[    0.801075] DVFS MSG: aclk_gpu: dvfs_adjust_table_lmtvolt get leakage_level = 7000
+<4>[    0.833912] rk3188 cpufreq version 2.2, suspend freq 816 MHz
+<4>[    0.834184] vpu: power on
+<6>[    0.834251] VPU_SERVICE: checking hw id 4831
+<4>[    0.846958] vpu: power off...done
+<6>[    0.847016] VPU_SERVICE: init success
+<6>[    0.847319] audit: initializing netlink socket (disabled)
+<5>[    0.847392] type=2000 audit(0.780:1): initialized
+<4>[    0.850018] highmem bounce pool size: 64 pages
+<6>[    0.850195] ashmem: initialized
+<6>[    0.877475] fuse init (API version 7.16)
+<7>[    0.877877] SELinux:  Registering netfilter hooks
+<6>[    0.882469] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+<6>[    0.882531] io scheduler noop registered
+<6>[    0.882571] io scheduler deadline registered
+<6>[    0.882652] io scheduler cfq registered (default)
+<6>[    0.902920] rga: Driver loaded succesfully
+<4>[    0.903177] rk_serial.c v1.6 2013-12-23
+<6>[    0.903284] rk_serial.0: ttyS0 at MMIO 0x10124000 (irq = 66) is a rk29_serial.0
+<6>[    0.903525] rk_serial rk_serial.0: membase 0xdf0d0000
+<6>[    0.903610] rk_serial.3: ttyS3 at MMIO 0x20068000 (irq = 69) is a rk29_serial.3
+<6>[    0.903780] rk_serial rk_serial.3: membase 0xdf0d8000
+<6>[    0.904092] Rockchip ion module(version: 1.0) is successfully loaded
+<6>[    0.907010] loop: module loaded
+<6>[    0.907073] Android kernel panic handler initialized (bind=kpanic)
+<6>[    0.907909] PPP generic driver version 2.4.2
+<6>[    0.908103] PPP Deflate Compression module registered
+<6>[    0.908142] PPP BSD Compression module registered
+<6>[    0.965446] PPP MPPE Compression module registered
+<6>[    0.965482] NET: Registered protocol family 24
+<6>[    0.965573] usbcore: registered new interface driver asix
+<6>[    0.965628] usbcore: registered new interface driver cdc_ether
+<6>[    0.965682] usbcore: registered new interface driver dm9620
+<6>[    0.965734] usbcore: registered new interface driver SR9700_android
+<6>[    0.965798] usbcore: registered new interface driver CoreChips
+<6>[    0.965851] usbcore: registered new interface driver net1080
+<6>[    0.965903] usbcore: registered new interface driver cdc_subset
+<6>[    0.965992] usbcore: registered new interface driver zaurus
+<6>[    0.966034] cdc_ncm: 04-Aug-2011
+<6>[    0.966074] usbcore: registered new interface driver cdc_ncm
+<4>[    0.966107] Rockchip WiFi SYS interface (V1.00) ... 
+<6>[    0.966171] Initializing USB Mass Storage driver...
+<6>[    0.966229] usbcore: registered new interface driver usb-storage
+<6>[    0.966263] USB Mass Storage support registered.
+<6>[    0.966389] usbcore: registered new interface driver usbserial
+<6>[    0.966445] USB Serial support registered for generic
+<6>[    0.966499] usbcore: registered new interface driver usbserial_generic
+<6>[    0.966536] usbserial: USB Serial Driver core
+<6>[    0.966578] USB Serial support registered for GSM modem (1-port)
+<6>[    0.966636] usbcore: registered new interface driver option
+<6>[    0.966694] option: v0.7.2:USB Driver for GSM modems
+<6>[    0.966745] USB Serial support registered for usi-modem
+<6>[    0.966799] usbcore: registered new interface driver usi-modem
+<4>[    1.002834] ******** Show Sink Info ********
+<4>[    1.002861] Support video mode: 
+<4>[    1.002881] 	1920x1080p@60Hz.
+<4>[    1.002899] 	1920x1080p@50Hz.
+<4>[    1.002917] 	1280x720p@60Hz.
+<4>[    1.002934] 	1280x720p@50Hz.
+<4>[    1.002951] 	720x576p@50Hz.
+<4>[    1.002968] 	720x480p@60Hz.
+<4>[    1.002985] Support audio type: LPCM
+<4>[    1.003005] Support audio sample rate: 
+<4>[    1.003027] 	32000
+<4>[    1.003039] 	44100
+<4>[    1.003051] 	48000
+<4>[    1.003064] Support audio word lenght: 
+<4>[    1.003086] 	16bit
+<4>[    1.003098] 	20bit
+<4>[    1.003110] 	24bit
+<4>[    1.003123] ******** Show Sink Info ********
+<4>[    1.003169] rk3188 lcdc1 clk enable...
+<4>[    1.003202] lcdc1: dclk:148500000>>fps:60 
+<6>[    1.003230] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+<6>[    1.003268] lcdc1 wakeup from standby!
+<6>[    1.003292] lcdc1 win0 open,atv layer:1
+<6>[    1.003322] lcdc1 win1 closed,atv layer:1
+<6>[    1.192442] DWC_OTG: ^^^^^^^^^^^^^^^^^^Host Mode
+<6>[    1.192485] usb20_otg usb20_otg: DWC OTG Controller
+<6>[    1.192590] usb20_otg usb20_otg: new USB bus registered, assigned bus number 1
+<6>[    1.192655] usb20_otg usb20_otg: irq 48, io mem 0x00000000
+<6>[    1.192711] DWC_OTG: Init: Port Power? op_state=1
+<6>[    1.192739] DWC_OTG: Init: Power Port (0)
+<6>[    1.192802] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    1.192846] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    1.192889] usb usb1: Product: DWC OTG Controller
+<6>[    1.192918] usb usb1: Manufacturer: Linux 3.0.36+ dwc_otg_hcd
+<6>[    1.192953] usb usb1: SerialNumber: usb20_otg
+<6>[    1.193256] hub 1-0:1.0: USB hub found
+<6>[    1.193287] hub 1-0:1.0: 1 port detected
+<6>[    1.195866] DWC_OTG: host20_driver_probe host2.0 reg addr: 0x101c0000 remap:0xdf180000
+<6>[    1.406423] DWC_OTG: ^^^^^^^^^^^^^^^^^^Host Mode
+<6>[    1.406464] usb20_host usb20_host: DWC OTG Controller
+<6>[    1.406533] usb20_host usb20_host: new USB bus registered, assigned bus number 2
+<6>[    1.406602] usb20_host usb20_host: irq 49, io mem 0x00000000
+<6>[    1.406671] DWC_OTG: Init: Port Power? op_state=1
+<6>[    1.406700] DWC_OTG: Init: Power Port (0)
+<6>[    1.406769] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+<6>[    1.406811] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>[    1.406854] usb usb2: Product: DWC OTG Controller
+<6>[    1.406886] usb usb2: Manufacturer: Linux 3.0.36+ host20_hcd
+<6>[    1.406920] usb usb2: SerialNumber: usb20_host
+<6>[    1.407184] hub 2-0:1.0: USB hub found
+<6>[    1.407214] hub 2-0:1.0: 1 port detected
+<4>[    1.407564] DWC_OTG: Mode Mismatch Interrupt: currently in Host mode
+<6>[    1.480687] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    1.480735] android_usb gadget: Number of LUNs=2
+<6>[    1.480774]  lun0: LUN: removable file: (no medium)
+<6>[    1.480804]  lun1: LUN: removable file: (no medium)
+<6>[    1.481009] android_usb gadget: android_usb ready
+<6>[    1.481191] input: rk29-keypad as /devices/platform/rk29-keypad/input/input0
+<6>[    1.481435] usbcore: registered new interface driver xpad
+<4>[    1.481601] ===================================================
+<4>[    1.481639] Rockchip IR remote controller driver. Version 1.0.0
+<4>[    1.481674] ===================================================
+<6>[    1.481708] ++++++++remotectl_init
+<4>[    1.481743] ++++++++remotectl_probe
+<4>[    1.481782] remotectl probe j=0x0
+<4>[    1.481804] remotectl probe j=0x1
+<4>[    1.481826] remotectl probe j=0x2
+<4>[    1.481846] remotectl probe j=0x3
+<4>[    1.481868] remotectl probe j=0x4
+<6>[    1.481980] input: rkxx-remotectl as /devices/platform/rkxx-remotectl/input/input1
+<6>[    1.486340] using rtc device, rtc_hym8563, for alarms
+<6>[    1.486391] rtc_hym8563 1-0051: rtc core: registered rtc_hym8563 as rtc0
+<6>[    1.486455] i2c /dev entries driver
+<6>[    1.486990] lirc_dev: IR Remote Control driver registered, major 250 
+<6>[    1.487029] IR NEC protocol handler initialized
+<6>[    1.487055] IR RC5(x) protocol handler initialized
+<6>[    1.487084] IR RC6 protocol handler initialized
+<6>[    1.487109] IR JVC protocol handler initialized
+<6>[    1.487136] IR Sony protocol handler initialized
+<6>[    1.487165] IR RC5 (streamzap) protocol handler initialized
+<6>[    1.487199] IR LIRC bridge handler initialized
+<6>[    1.487226] Linux video capture interface: v2.00
+<6>[    1.487324] usbcore: registered new interface driver uvcvideo
+<6>[    1.487357] USB Video Class driver (v1.1.0)
+<4>[    1.487408] def_ref_volt: 1800mV, curr_ref_volt: 1800mV
+<6>[    1.487705] device-mapper: uevent: version 1.0.3
+<6>[    1.487924] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    1.488107] Bluetooth: HCI UART driver ver 2.2
+<6>[    1.488137] Bluetooth: HCI H4 protocol initialized
+<6>[    1.488167] Bluetooth: HCILL protocol initialized
+<6>[    1.488232] cpuidle: using governor ladder
+<6>[    1.488259] cpuidle: using governor menu
+<6>[    1.533681] 
+<6>[    1.533684] drivers/mmc/core/core.c...2019..  ===== mmc_rescan Begin....[mmc0]
+<4>[    1.533737] 
+<4>[    1.533739] =================
+<4>[    1.533743] sdmmc_rescan..2026..  ====find no SDMMC host. [mmc0]
+<6>[    1.533819] .Line4018..The End of SDMMC-probe Ver.6.07 The last modify date is 2013-12-20.  [sd_mmc]
+<6>[    1.534011] 
+<6>[    1.534016] drivers/mmc/core/core.c...2019..  ===== mmc_rescan Begin....[mmc1]
+<6>[    1.534075] .Line4018..The End of SDMMC-probe Ver.6.07 The last modify date is 2013-12-20.  [sdio]
+<6>[    1.535242] usbcore: registered new interface driver usbhid
+<6>[    1.535278] usbhid: USB HID core driver
+<6>[    1.535595] logger: created 256K log 'log_main'
+<6>[    1.535673] logger: created 256K log 'log_events'
+<6>[    1.535755] logger: created 256K log 'log_radio'
+<6>[    1.535834] logger: created 256K log 'log_system'
+<6>[    1.536135] zram: Created 1 device(s) ...
+<6>[    1.536640] ALSA device list:
+<6>[    1.536660]   No soundcards found.
+<6>[    1.536804] GACT probability NOT on
+<6>[    1.536833] Mirror/redirect action on
+<6>[    1.536856] u32 classifier
+<6>[    1.536872]     Actions configured
+<6>[    1.536894] Netfilter messages via NETLINK v0.30.
+<6>[    1.536962] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+<6>[    1.537267] ctnetlink v0.93: registering with nfnetlink.
+<6>[    1.537330] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    1.537371] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    1.537647] xt_time: kernel timezone is -0000
+<6>[    1.537798] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    1.537954] arp_tables: (C) 2002 David S. Miller
+<6>[    1.538017] TCP cubic registered
+<6>[    1.538038] Initializing XFRM netlink socket
+<6>[    1.538410] NET: Registered protocol family 10
+<6>[    1.538961] Mobile IPv6
+<6>[    1.538999] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    1.539116] IPv6 over IPv4 tunneling driver
+<6>[    1.539667] NET: Registered protocol family 17
+<6>[    1.539716] NET: Registered protocol family 15
+<6>[    1.546765] rk29_sdmmc_change_clk_div..1684..  newDiv=42, newCLK=294Khz [sdio]
+<6>[    1.796702] usb 2-1: new full speed USB device number 2 using usb20_host
+<6>[    1.796893] Bluetooth: RFCOMM TTY layer initialized
+<6>[    1.796932] Bluetooth: RFCOMM socket layer initialized
+<6>[    1.796964] Bluetooth: RFCOMM ver 1.11
+<6>[    1.796988] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    1.797022] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    1.797165] NET: Registered protocol family 35
+<6>[    1.797358] [BT_RFKILL]: Enter rfkill_rk_init
+<6>[    1.797458] [BT_RFKILL]: Request irq for bt wakeup host
+<6>[    1.797502] [BT_RFKILL]: ** disable irq
+<6>[    1.826686] [BT_RFKILL]: bt shut off power
+<6>[    1.826717] [BT_RFKILL]: bt_default device registered.
+<4>[    1.826787] pmic set pm_suspend_volt:
+<6>[    1.826817] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+<5>[    1.826877] Registering SWP/SWPB emulation handler
+<6>[    1.866754] ddrfreq: verion 3.2 20131126
+<6>[    1.866781] ddrfreq: fix cpu pause bug
+<6>[    1.866808] ddrfreq: normal 456MHz video 0MHz video_low 0MHz dualview 0MHz idle 0MHz suspend 198MHz reboot 300MHz
+<6>[    1.877290] ddrfreq: change freq to 445 MHz when normal
+<6>[    1.877920] rtc_hym8563 1-0051: setting system clock to 2016-02-14 01:29:00 UTC (1455413340)
+<6>[    1.880514] asoc: rk-hdmi-i2s-hifi <-> rk29_i2s.1 mapping ok
+<6>[    1.880942] usbcore: registered new interface driver snd-usb-audio
+<6>[    1.881241] Freeing init memory: 2204K
+<7>[    1.935806] SELinux: 512 avtab hash slots, 1334 rules.
+<7>[    1.936313] SELinux: 512 avtab hash slots, 1334 rules.
+<7>[    1.936334] SELinux:  1 users, 2 roles, 288 types, 1 bools, 1 sens, 1024 cats
+<7>[    1.936355] SELinux:  84 classes, 1334 rules
+<7>[    1.937206] SELinux:  Completing initialization.
+<7>[    1.937221] SELinux:  Setting up existing superblocks.
+<7>[    1.937247] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+<7>[    1.937272] SELinux: initialized (dev rootfs, type rootfs), uses genfs_contexts
+<7>[    1.937331] SELinux: initialized (dev bdev, type bdev), not configured for labeling
+<7>[    1.937353] SELinux: initialized (dev proc, type proc), uses genfs_contexts
+<7>[    1.937382] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    1.937411] SELinux: initialized (dev devtmpfs, type devtmpfs), uses transition SIDs
+<7>[    1.937574] SELinux: initialized (dev debugfs, type debugfs), uses genfs_contexts
+<7>[    1.938537] SELinux: initialized (dev sockfs, type sockfs), uses task SIDs
+<7>[    1.938561] SELinux: initialized (dev pipefs, type pipefs), uses task SIDs
+<7>[    1.938584] SELinux: initialized (dev anon_inodefs, type anon_inodefs), not configured for labeling
+<7>[    1.938611] SELinux: initialized (dev devpts, type devpts), uses transition SIDs
+<7>[    1.938641] SELinux: initialized (dev selinuxfs, type selinuxfs), uses genfs_contexts
+<7>[    1.938703] SELinux: initialized (dev mtd_inodefs, type mtd_inodefs), not configured for labeling
+<7>[    1.938726] SELinux: initialized (dev usbfs, type usbfs), not configured for labeling
+<7>[    1.938752] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    1.938791] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+<6>[    2.013795] usb 2-1: New USB device found, idVendor=0a05, idProduct=7211
+<6>[    2.013834] usb 2-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+<6>[    2.013877] usb 2-1: Product: USB2.0 HUB
+<6>[    2.014840] hub 2-1:1.0: USB hub found
+<6>[    2.015777] hub 2-1:1.0: 4 ports detected
+<5>[    2.230571] type=1403 audit(1455413340.840:2): policy loaded auid=4294967295 ses=4294967295
+<4>[    2.230817] SELinux: Loaded policy from /sepolicy
+<5>[    2.233125] type=1404 audit(1455413340.840:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+<6>[    2.497775] usb 2-1.1: new low speed USB device number 3 using usb20_host
+<6>[    2.616313] usb 2-1.1: New USB device found, idVendor=413c, idProduct=2105
+<6>[    2.623225] usb 2-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+<6>[    2.630563] usb 2-1.1: Product: Dell USB Keyboard
+<6>[    2.635286] usb 2-1.1: Manufacturer: Dell
+<6>[    2.658920] input: Dell Dell USB Keyboard as /devices/platform/usb20_host/usb2/2-1/2-1.1/2-1.1:1.0/input/input2
+<6>[    2.669202] generic-usb 0003:413C:2105.0001: input: USB HID v1.10 Keyboard [Dell Dell USB Keyboard] on usb-usb20_host-1.1/input0
+<6>[    2.917759] usb 2-1.2: new low speed USB device number 4 using usb20_host
+<3>[    3.020056] usb 2-1.2: device descriptor read/all, error -71
+<6>[    3.097758] usb 2-1.2: new low speed USB device number 5 using usb20_host
+<3>[    3.170299] init: /init.rk30board.rc: 277: invalid option 'enable'
+<4>[    3.170914] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<6>[    3.204077] usb 2-1.2: New USB device found, idVendor=1bcf, idProduct=0005
+<6>[    3.210981] usb 2-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+<6>[    3.218313] usb 2-1.2: Product: USB Optical Mouse
+<6>[    3.230985] input: USB Optical Mouse as /devices/platform/usb20_host/usb2/2-1/2-1.2/2-1.2:1.0/input/input3
+<6>[    3.231136] generic-usb 0003:1BCF:0005.0002: input: USB HID v1.10 Mouse [USB Optical Mouse] on usb-usb20_host-1.2/input0
+<3>[    3.636344] init: /dev/hw_random not found
+<6>[    3.636436] keychord: using input dev rk29-keypad for fevent
+<6>[    3.636468] keychord: using input dev rkxx-remotectl for fevent
+<6>[    3.636504] keychord: using input dev Dell Dell USB Keyboard for fevent
+<7>[    3.836794] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+<7>[    3.837128] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    4.006784] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+<7>[    4.007963] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    4.008305] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    4.008455] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<7>[    4.096770] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+<7>[    4.098454] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+<4>[    4.102170] gp_rknand_info = : 0xde2e8400
+<4>[    4.102281] rk30_chip_set:1 
+<4>[    4.102350] FtlInit!
+<4>[    4.102382] No.1 FLASH ID:45 de 94 93 76 57
+<4>[    4.105373] FTL version: 5.0.12 20140214
+<4>[    4.292194] gBootMedia = 1 gSdmmcFwPartOffset =0!
+<4>[    4.292222] rknand_buffer.c version: 4.40 20130830!
+<5>[    4.301840] 11 cmdlinepart partitions found on MTD device rk29xxnand
+<5>[    4.301877] Creating 11 MTD partitions on "rk29xxnand":
+<5>[    4.301914] 0x000000400000-0x000000800000 : "misc"
+<5>[    4.318475] 0x000000800000-0x000001400000 : "kernel"
+<5>[    4.323701] 0x000001400000-0x000002000000 : "boot"
+<5>[    4.328744] 0x000002000000-0x000004000000 : "recovery"
+<5>[    4.334136] 0x000004000000-0x000034000000 : "backup"
+<5>[    4.339342] 0x000034000000-0x00003c000000 : "cache"
+<5>[    4.347147] 0x00003c000000-0x0000bbc00000 : "userdata"
+<5>[    4.352589] 0x0000bbc00000-0x0000bc000000 : "metadata"
+<5>[    4.357994] 0x0000bc000000-0x0000bc400000 : "kpanic"
+<6>[    4.364039] apanic: Bound to mtd partition 'kpanic'
+<6>[    4.364067] apanic: No panic data available
+<5>[    4.364104] 0x0000bc400000-0x0000ec400000 : "system"
+<5>[    4.378260] 0x0000ec400000-0x0001d4000000 : "user"
+<3>[    4.389734] fs_mgr: parse_link_device /dev/block/mtdblock10: in
+<3>[    4.395531] fs_mgr: parse_link_device : ---- part_num = 10, path = /devices/virtual/mtd/mtd10/mtdblock10, is_emmc = 0
+<3>[    4.406381] fs_mgr: parse_link_device : path = NULL
+<3>[    4.411126] fs_mgr: parse_link_device : path = NULL
+<3>[    4.416039] fs_mgr: parse_link_device : path = NULL
+<3>[    4.420953] fs_mgr: parse_link_device : path = NULL
+<3>[    4.425864] fs_mgr: parse_link_device : path = NULL
+<3>[    4.430776] fs_mgr: parse_link_device : path = NULL
+<3>[    4.435687] fs_mgr: parse_link_device : path = NULL
+<6>[    4.440639] fs_mgr: ---------------resize_fs blk_dev /dev/block/mtd/by-name/system, type ext4
+<6>[    4.449200] fs_mgr: Running /sbin/resize2fs on /dev/block/mtd/by-name/system
+<6>[    4.457930] resize2fs: resize2fs 1.41.14 (22-Dec-2010)
+<6>[    4.465819] resize2fs: The filesystem is already 196608 blocks long.  Nothing to do!
+<6>[    4.465867] resize2fs: 
+<6>[    4.475972] EXT4-fs (mtdblock9): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard
+<7>[    4.476052] SELinux: initialized (dev mtdblock9, type ext4), uses xattr
+<4>[    4.499415] EXT4-fs (mtdblock5): warning: checktime reached, running e2fsck is recommended
+<6>[    4.499611] EXT4-fs (mtdblock5): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard
+<7>[    4.501079] SELinux: initialized (dev mtdblock5, type ext4), uses xattr
+<4>[    4.505693] EXT4-fs (mtdblock7): warning: mounting unchecked fs, running e2fsck is recommended
+<6>[    4.505881] EXT4-fs (mtdblock7): mounted filesystem without journal. Opts: noauto_da_alloc,discard
+<7>[    4.505934] SELinux: initialized (dev mtdblock7, type ext4), uses xattr
+<4>[    4.526527] EXT4-fs (mtdblock6): warning: maximal mount count reached, running e2fsck is recommended
+<7>[    4.542801] EXT4-fs (mtdblock6): ext4_orphan_cleanup: deleting unreferenced inode 5278
+<7>[    4.544334] EXT4-fs (mtdblock6): ext4_orphan_cleanup: deleting unreferenced inode 5277
+<7>[    4.553558] EXT4-fs (mtdblock6): ext4_orphan_cleanup: deleting unreferenced inode 4352
+<7>[    4.560596] EXT4-fs (mtdblock6): ext4_orphan_cleanup: deleting unreferenced inode 3710
+<6>[    4.560754] EXT4-fs (mtdblock6): 4 orphan inodes deleted
+<6>[    4.560801] EXT4-fs (mtdblock6): recovery complete
+<6>[    4.579338] EXT4-fs (mtdblock6): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard
+<7>[    4.579409] SELinux: initialized (dev mtdblock6, type ext4), uses xattr
+<4>[    4.601930] UMP: Using OS memory backend, allocation limit: 1073741824
+<4>[    4.601991] UMP: UMP device driver -0d88e3e loaded
+<4>[    4.628866] Mali: Mali400 inside of rk3188!
+
+<4>[    4.628904] Mali: mali freq table num : 6 
+
+<4>[    4.628929] Mali: mali freq table :Mali: 132,Mali: 179,Mali: 223,Mali: 297,Mali: 297,Mali: 446,Mali: 
+
+<4>[    4.628996] Mali: init mali clock success 
+<4>[    4.630479] Mali: Mali device driver loaded
+<4>[    4.634098] rk30_mirroring: Unknown symbol video_data_to_mirroring (err 0)
+<4>[    4.634166] rk30_mirroring: Unknown symbol audio_data_to_mirroring (err 0)
+<4>[    4.636246] rk29_ipp: module is from the staging directory, the quality is unknown, you have been warned.
+<4>[    4.637041] ipp irq 47
+<4>[    4.637541] IPP init, version rk30-ipp 1.003
+<3>[    4.689732] init: /dev/hw_random not found
+<3>[    4.744811] healthd: No charger supplies found
+<4>[    4.749293] healthd: BatteryStatusPath not found
+<4>[    4.753931] healthd: BatteryHealthPath not found
+<4>[    4.758581] healthd: BatteryPresentPath not found
+<3>[    4.758647] init: cannot find '/system/vendor/bin/pvrsrvctl', disabling 'pvrsrvctl'
+<3>[    4.768871] init: cannot find '/system/bin/rild3', disabling 'ril-daemon3'
+<4>[    4.770460] healthd: BatteryCapacityPath not found
+<4>[    4.770493] healthd: BatteryVoltagePath not found
+<4>[    4.770518] healthd: BatteryTemperaturePath not found
+<4>[    4.770545] healthd: BatteryTechnologyPath not found
+<6>[    4.770930] binder: 93:93 transaction failed 29189, size 0-0
+<3>[    5.197936] init: cannot find '/system/bin/bplus_helper', disabling 'bplus_helper'
+<4>[    5.199870] RKNAND_GET_DRM_KEY
+<4>[    5.199939] return ret = 0
+<3>[    5.203260] init: using deprecated syntax for specifying property 'ro.product.usbfactory', use ${name} instead
+<3>[    5.307298] init: property 'sys.powerctl' doesn't exist while expanding '${sys.powerctl}'
+<3>[    5.307367] init: powerctl: cannot expand '${sys.powerctl}'
+<3>[    5.307423] init: property 'sys.sysctl.extra_free_kbytes' doesn't exist while expanding '${sys.sysctl.extra_free_kbytes}'
+<3>[    5.307492] init: cannot expand '${sys.sysctl.extra_free_kbytes}' while writing to '/proc/sys/vm/extra_free_kbytes'
+<3>[    5.310152] android_usb: already disabled
+<6>[    5.317573] adb_open
+<6>[    5.407179] warning: `daemonsu' uses 32-bit capabilities (legacy support in use)
+<3>[    5.413610] init: untracked pid 109 exited
+<3>[    5.443072] fs_mgr: parse_link_device /dev/block/mtdblock10: in
+<3>[    5.443137] fs_mgr: parse_link_device : ---- part_num = 10, path = /devices/virtual/mtd/mtd10/mtdblock10, is_emmc = 0
+<3>[    5.443214] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443257] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443298] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443380] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443429] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443470] fs_mgr: parse_link_device : path = NULL
+<3>[    5.443511] fs_mgr: parse_link_device : path = NULL
+<6>[    5.443733] .204.. MMC0 receive the message sd-No-Media from VOLD.[sd_mmc]
+<6>[    5.443771] .235.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]
+<4>[    5.519166] rk fb use 3 buffers
+<7>[    5.853820] SELinux: 512 avtab hash slots, 1382 rules.
+<7>[    5.854450] SELinux: 512 avtab hash slots, 1382 rules.
+<7>[    5.854486] SELinux:  1 users, 2 roles, 288 types, 1 bools, 1 sens, 1024 cats
+<7>[    5.854521] SELinux:  84 classes, 1382 rules
+<6>[    5.872813] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<6>[    6.013651] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<5>[    6.017625] type=1403 audit(1455413344.620:4): policy loaded auid=4294967295 ses=4294967295
+<3>[    6.022073] init: untracked pid 137 exited
+<6>[    6.041943] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<6>[    6.085298] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<4>[    6.244459] avc:  received policyload notice (seqno=2)
+<6>[    6.537351] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<6>[    6.543856] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<6>[    6.781061] EXT4-fs (mtdblock9): re-mounted. Opts: (null)
+<3>[    6.829166] init: untracked pid 376 exited
+<3>[    6.867382] init: untracked pid 200 exited
+<3>[    7.246439] init: sys_prop: permission denied uid:1000  name:sys_graphic.cam_hal.ver
+<3>[    7.452501] not equal..
+<3>[    7.452527] not equal..
+<7>[    7.452560] i2s dma info:periodsize(8192),limit(3),buffersize(24576),over(0)
+<7>[    7.669922] i2s dma info:periodsize(8192),limit(3),buffersize(24576),over(0)
+<6>[   35.289439] request_suspend_state: wakeup (3->0) at 35222766006 (2016-02-14 01:29:33.892766254 UTC)
+<4>[   35.679937] wifi_driver_write: wifi driver already rmmod
+<6>[   35.927245] acc_open
+<6>[   35.927280] acc_release
+<4>[   36.785581] =======================================================
+<4>[   36.785620] ==== Launching Wi-Fi driver! (Powered by Rockchip) ====
+<4>[   36.785665] =======================================================
+<4>[   36.785697] Realtek 8723BS SDIO WiFi driver (Powered by Rockchip,Ver 3.10.WFD) init.
+<4>[   36.785738] RTL871X: module init start
+<4>[   36.785759] RTL871X: rtl8723bs v4.3.0_10579.20140221_BTCOEX20140110-4940
+<4>[   36.785793] RTL871X: build time: Sep 23 2014 18:13:37
+<4>[   36.785818] RTL871X: rtl8723bs BT-Coex version = BTCOEX20140110-4940
+<4>[   36.786168] wifi_probe: gpio:282 wifi_wake_gpio:282
+<4>[   36.786200] wifi_probe oob_irq:282
+<6>[   36.786219] rk29sdk_wifi_power: 1
+<6>[   37.059474] wifi turn on power
+<6>[   37.062879] rk29sdk_wifi_set_carddetect:1
+<6>[   37.064759] mmc1: slot status change detected(0-1)
+<4>[   37.067114] RTL871X: module init ret=0
+<6>[   37.256758] 
+<6>[   37.256762] drivers/mmc/core/core.c...2019..  ===== mmc_rescan Begin....[mmc1]
+<4>[   37.297160] rk29_sdmmc_command_complete..2888...CMD52(arg=0xc00), hoststate=1, errorTimes=1, errorStep=0x1e ! [sdio]
+<4>[   37.297663] rk29_sdmmc_command_complete..2888...CMD52(arg=0x80000c08), hoststate=1, errorTimes=1, errorStep=0x1e ! [sdio]
+<6>[   37.301666] 
+<6>[   37.301669] mmc_attach_sdio..1112..  ===== Begin to identify card as SDIO-card. [mmc1]
+<6>[   37.324082] rk29_sdmmc_change_clk_div..1684..  newDiv=0, newCLK=24750Khz [sdio]
+<6>[   37.325710] mmc1: new high speed SDIO card at address 0001
+<4>[   37.392624] Wifi Efuse Mac => ff:ff:ff:ff:ff:ff
+<4>[   37.392974] rk29sdk_wifi_mac_addr.
+<4>[   37.393166] falsh wifi_custom_mac_addr=[00:00:00:00:00:00]
+<4>[   37.393394] This mac address is not valid, ignored...
+<4>[   37.397754] RTL871X: rtw_ndev_init(wlan0)
+<4>[   37.400986] RTL871X: rtw_ndev_init(p2p0)
+<6>[   37.405743] sdmmc_rescan_try_freq..1867..  ===== Initialize SDIO successfully. [mmc1]
+<7>[   38.019327] SELinux: initialized (dev mtdblock10, type vfat), uses genfs_contexts
+<3>[   38.053900] init: no such service 'fuse_internal_sd'
+<5>[   38.124466] type=1400 audit(1455413376.720:5): avc:  denied  { read } for  pid=628 comm="zygote" path=2F6465762F6173686D656D2F64616C76696B2D68656170202864656C6574656429 dev=tmpfs ino=3383 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file
+<5>[   38.200281] type=1400 audit(1455413376.800:6): avc:  denied  { getattr } for  pid=628 comm="re-initialized>" path="/data/app" dev=mtdblock6 ino=32706 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:apk_data_file:s0 tclass=dir
+<6>[   39.966838] ADDRCONF(NETDEV_UP): p2p0: link is not ready
+<3>[   40.162502] init: sys_prop: permission denied uid:1001  name:media.cfg.audio.soundeffect
+<6>[   40.175662] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<4>[   40.263774] vpu: power on
+<5>[   41.633466] type=1400 audit(1455413380.230:7): avc:  denied  { read } for  pid=677 comm="coilsw.launcher" path=2F6465762F6173686D656D2F64616C76696B2D4C696E656172416C6C6F63202864656C6574656429 dev=tmpfs ino=2250 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file
+<4>[   42.112202] RTL871X: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+<4>[   42.277189] RTL871X: start auth
+<4>[   42.279552] RTL871X: auth success, start assoc
+<4>[   42.284734] RTL871X: assoc success
+<6>[   42.285124] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+<4>[   42.301606] RTL871X: send eapol packet
+<4>[   42.307832] RTL871X: send eapol packet
+<4>[   42.311947] RTL871X: set pairwise key to hw: alg:4(WEP40-1 WEP104-5 TKIP-2 AES-4) camid:4
+<4>[   42.320535] RTL871X: set group key to hw: alg:4(WEP40-1 WEP104-5 TKIP-2 AES-4) keyid:1
+<5>[   42.501402] type=1400 audit(1455413381.100:8): avc:  denied  { read write } for  pid=677 comm="coilsw.launcher" name="ump" dev=tmpfs ino=4107 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<5>[   42.521720] type=1400 audit(1455413381.120:9): avc:  denied  { open } for  pid=677 comm="coilsw.launcher" name="ump" dev=tmpfs ino=4107 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<5>[   42.541312] type=1400 audit(1455413381.140:10): avc:  denied  { ioctl } for  pid=677 comm="coilsw.launcher" path="/dev/ump" dev=tmpfs ino=4107 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<5>[   42.547129] type=1400 audit(1455413381.150:11): avc:  denied  { getattr } for  pid=677 comm="coilsw.launcher" path="/dev/mali" dev=tmpfs ino=4109 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<3>[   43.573562] init: cannot find '/system/bin/run.sh', disabling 'runremotectrl'
+<3>[   43.750763] init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+<4>[   44.266761] vpu: power off...done
+<6>[   48.945815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   49.113830] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   49.333827] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   49.421814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   49.525834] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   49.597802] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   49.605809] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   49.669846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   49.749820] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   49.853870] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   49.885810] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 2
+<6>[   49.893815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   49.917814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<6>[   50.493872] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<6>[   50.533886] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   50.541838] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 2
+<6>[   50.565803] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   50.589809] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   50.741837] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<6>[   50.829847] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<5>[   50.896293] type=1400 audit(1455413389.951:12): avc:  denied  { read } for  pid=1144 comm="su" name="/" dev=selinuxfs ino=1 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir
+<5>[   50.898233] type=1400 audit(1455413389.961:13): avc:  denied  { search } for  pid=1144 comm="su" name="/" dev=selinuxfs ino=1 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir
+<5>[   50.899109] type=1400 audit(1455413389.961:14): avc:  denied  { read } for  pid=1144 comm="su" name="enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<5>[   50.899828] type=1400 audit(1455413389.961:15): avc:  denied  { open } for  pid=1144 comm="su" name="enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<5>[   50.901205] type=1400 audit(1455413389.961:16): avc:  denied  { getattr } for  pid=1144 comm="su" path="/sys/fs/selinux/enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<6>[   51.021845] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   51.053859] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<5>[   51.108367] type=1404 audit(1455413390.171:17): enforcing=0 old_enforcing=1 auid=4294967295 ses=4294967295
+<6>[   51.149821] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<5>[   51.192806] type=1400 audit(1455413390.251:18): avc:  denied  { getattr } for  pid=1163 comm="re-initialized>" path="/data/app" dev=mtdblock6 ino=32706 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:apk_data_file:s0 tclass=dir
+<4>[   52.497126] avc:  received setenforce notice (enforcing=0)
+<7>[   52.636714] wlan0: no IPv6 routers present
+<6>[   56.109814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   56.189825] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   56.205815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   56.213825] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   56.221817] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   56.493817] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   56.509858] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   56.541849] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   56.581802] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   56.621827] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   56.637848] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<6>[   56.685800] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 2
+<6>[   56.869819] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   56.901801] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   57.005832] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   57.101881] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   57.333850] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   57.381861] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   57.389810] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   57.437827] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   57.637840] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   57.653845] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   57.685802] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   57.733888] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   57.821874] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   57.853831] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   57.877878] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   57.893816] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   57.949827] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   57.973831] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   57.981829] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   58.181804] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   59.093815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<5>[   59.104384] type=1400 audit(1455413398.161:19): avc:  denied  { ioctl } for  pid=677 comm="coilsw.launcher" path="/dev/mali" dev=tmpfs ino=4109 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<6>[   59.197810] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   59.205810] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   59.285829] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   59.373836] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   59.437843] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   59.645804] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   59.653813] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   59.677872] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   59.685820] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   59.733809] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   59.765841] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   59.837857] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   59.845831] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   59.861818] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   59.869843] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   59.893846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   59.961831] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   60.025832] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   60.313810] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   60.673844] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   60.689887] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   60.873874] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   60.921843] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   60.961836] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   61.033815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   61.049857] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   61.057824] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   61.081817] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<3>[   61.332185] init: untracked pid 1153 exited
+<6>[   61.449814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   61.505859] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   61.521846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   61.537814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   61.633857] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   61.721859] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   61.729842] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   61.761833] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   61.809878] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   61.825842] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   61.865814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   61.921862] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   62.049815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   62.233828] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 13
+<6>[   62.241805] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   62.273869] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   63.297808] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   63.337858] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   63.369846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   63.465857] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   63.481822] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<3>[   63.579182] init: untracked pid 1144 exited
+<6>[   63.601861] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<6>[   63.801917] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   63.969805] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   64.289816] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   64.417812] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   64.457811] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   64.513801] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   64.521840] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   64.633814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 2
+<6>[   64.793826] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   64.809825] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   64.857844] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   64.873858] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 1
+<6>[   64.889846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   64.897843] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   64.945833] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   65.001815] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 11
+<6>[   65.025809] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 14
+<6>[   65.097859] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 9
+<6>[   65.489811] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 10
+<7>[   65.734741] i2s dma info:periodsize(8192),limit(3),buffersize(24576),over(0)
+<6>[   65.857820] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   66.017833] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   66.041833] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   66.289857] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 3
+<6>[   66.385821] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   66.457858] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 8
+<6>[   66.545828] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   66.689843] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   66.809849] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   67.032163] DWC_OTG: force_usb_mode_store 1->2
+<6>[   67.032224] DWC_OTG: PortPower off
+<6>[   67.409890] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   67.465827] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   67.585826] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 2
+<6>[   67.593846] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   67.657814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 0
+<6>[   67.713803] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 12
+<6>[   67.753811] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 5
+<6>[   67.761803] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   67.841830] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 6
+<6>[   67.857841] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 4
+<6>[   67.878801] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 7
+<6>[   67.903814] DWC_OTG: handle_hc_chhltd_intr_dma, DATA toggle error, Channel 15
+<6>[   68.326705] DWC_OTG: ********vbus detect*********************************************
+<5>[   68.496925] type=1400 audit(1455413407.561:20): avc:  denied  { read } for  pid=1716 comm="su" name="/" dev=selinuxfs ino=1 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir
+<5>[   68.497091] type=1400 audit(1455413407.561:21): avc:  denied  { search } for  pid=1716 comm="su" name="/" dev=selinuxfs ino=1 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=dir
+<5>[   68.497212] type=1400 audit(1455413407.561:22): avc:  denied  { read } for  pid=1716 comm="su" name="enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<5>[   68.497315] type=1400 audit(1455413407.561:23): avc:  denied  { open } for  pid=1716 comm="su" name="enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<5>[   68.497426] type=1400 audit(1455413407.561:24): avc:  denied  { getattr } for  pid=1716 comm="su" path="/sys/fs/selinux/enforce" dev=selinuxfs ino=4 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:selinuxfs:s0 tclass=file
+<6>[   68.512821] DWC_OTG: ********soft connect!!!*****************************************
+<6>[   68.518829] DWC_OTG: USB SUSPEND
+<6>[   68.645448] DWC_OTG: USB RESET
+<6>[   68.752553] android_work: sent uevent USB_STATE=CONNECTED
+<5>[   68.755828] type=1400 audit(1455413407.811:25): avc:  denied  { read write } for  pid=1696 comm="ainfire.supersu" name="ump" dev=tmpfs ino=4107 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<6>[   68.756123] DWC_OTG: USB RESET
+<5>[   68.756991] type=1400 audit(1455413407.821:26): avc:  denied  { open } for  pid=1696 comm="ainfire.supersu" name="ump" dev=tmpfs ino=4107 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file
+<6>[   68.877086] android_usb gadget: high speed config #1: android
+<6>[   68.877742] android_work: sent uevent USB_STATE=CONFIGURED
+<3>[   68.925669] init: untracked pid 1155 exited
+<5>[   75.562867] type=1400 audit(1455413414.621:27): avc:  denied  { read } for  pid=841 comm="launcher-loader" path=2F6465762F6173686D656D2F64616C76696B2D68656170202864656C6574656429 dev=tmpfs ino=3383 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file
+<5>[   76.542747] type=1400 audit(1455413415.601:28): avc:  denied  { execute } for  pid=1611 comm="Icing-Worker-0" path="/data/data/com.google.android.gms/files/libAppDataSearchExt_armeabi_v7a.so" dev=mtdblock6 ino=1139 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:app_data_file:s0 tclass=file

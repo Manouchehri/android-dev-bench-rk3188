@@ -1,0 +1,1 @@
+Linux localhost 3.0.36+ #50 SMP PREEMPT Wed Sep 24 14:07:11 CST 2014 armv7l GNU/Linux
