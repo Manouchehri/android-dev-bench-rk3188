@@ -1,0 +1,1 @@
+This repo contains various bits of info on my Android (ARM) dev bench setup.
