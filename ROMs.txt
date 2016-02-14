@@ -1,0 +1,1 @@
+I believe I'm running T010_8723bs_4.4_1080_20140924 (or cyxtech_rk31_809iii_8723bs_131111_4.4_8g2g). Had a lot of issues getting a working kernel, seems to be because it's a RK3188T and not a RK3188.
